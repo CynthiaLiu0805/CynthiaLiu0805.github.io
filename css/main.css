@@ -596,6 +596,7 @@ header{
 .protfolio .container{
 	padding-top:67px ;
 	padding-bottom:0 ;
+	padding-left: 50px;
 }
 .protfolio .heading {
 	padding-bottom:50px;
@@ -627,7 +628,7 @@ header{
 }
 .portfolioFilter ul li{
 	display:inline-block;
-	margin:0 -2px;
+	/* margin:0 -2px; */
 	position:relative;
 }
 .portfolioFilter ul li:after {
@@ -674,14 +675,14 @@ header{
 }
 ul.portfolioContainer{
 	display:block;
-	padding:0px;
-	margin-bottom:0;
-	list-style-type:none;
+	/* padding:10px; */
+	margin-bottom:0px;
+	/* list-style-type:none; */
 }
 ul.portfolioContainer li{
 	display:block;
 	height:auto;
-	padding:0px;
+	padding:20px;
 	margin:0px;
 	cursor:pointer;
 	border:1px solid #fff;
@@ -689,6 +690,8 @@ ul.portfolioContainer li{
 }
 ul.portfolioContainer li .lightCon{
 	display:block;
+	padding: 10px;
+	/* margin-left: 20px; */
 	margin:0px;
 	position:relative;
 	overflow:hidden;
@@ -698,18 +701,31 @@ ul.portfolioContainer li img{
 	 height:auto;
 	 display:block;
 }
+
+.skillButton{
+	color:black;
+	background-color: rgb(255, 255, 255);
+align-self: center;
+  margin: 5px 3px;
+  padding: 6px 9px;
+  border: 2px solid var(--color-black);
+  border-radius: var(--size-border-radius);
+
+  text-align: center;
+  display: inline-block;
+}
+
+
 .githubButton{
 	color: white;
 	background-color: rgb(137, 137, 137);
   font-size: var(--font-regular);
-  left: 50px;
+  margin-left:50px;
   font-weight: var(--weight-semi-bold);
-  margin-left: 70px;
   padding: 8px 12px;
   border: 2px solid var(--color-black);
   border-radius: var(--size-border-radius);
   
-  /* cursor: default; */
 }
 .demoButton{
 	color: white;
@@ -721,26 +737,24 @@ ul.portfolioContainer li img{
   border: 2px solid var(--color-black);
   border-radius: var(--size-border-radius);
   
-  /* cursor: default; */
 }
 span.hoverBox{
 	visibility:hidden;
-	width:100%;
-	height:100%;
+	width:95%;
+	height:95%;
 	position: absolute;
-	left:0px;
-	bottom: 0px;
-	
+	left: 7px;
+	bottom: 7px;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
-	
+	padding:10px;
 	/* background: rgba(254, 251, 255, 0); */
 	
 }
 ul.portfolioContainer li:hover span.hoverBox{
 	visibility:visible;
-	left:0px;
-	bottom: 0px;
+	/* left:0px;
+	bottom: 0px; */
 	
 	background: rgba(239, 239, 239, 0.9);
 	opacity: 0.8; 
